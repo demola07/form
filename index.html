@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Signup</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="script.js"></script>
 
 </head>
 <body>
     <header class="head" >
-        
         <h1>Welcome to NESA by MAKERS</h1>
         <h4>Aligning Potential with Opportunity</h4>
         <img src="nesa.JPG" alt="NESA" width="150px" height="93px">
@@ -27,14 +27,15 @@
         <section >
             <div class="container">
                 <div class="div">
-                    <form class="form">
-                            <input type="text" required placeholder="Firstname:" class="form-control inputbox"> <br><br>
-                            <input type="text" required placeholder="Lastname:" class="form-control inputbox"> <br><br>
-                            <input type="email" required placeholder="Email:" class="form-control inputbox"> <br><br>
-                            <input type="password" required placeholder="password:" class="form-control inputbox"> <br><br>
-                            <input type="password" required placeholder="confirm password:" class="form-control inputbox"> <br><br>
-                            <input list="age" placeholder="Age (-- select --)" class="form-control inputbox">
-                            <datalist id="age">
+                    <form class="form" name="form1">
+                            <input type="text" required placeholder="Firstname:" class="form-control inputbox" id="firstname" name="firstname"> <br><br>
+                            <input type="text" required placeholder="Lastname:" class="form-control inputbox" id="lastname" name="lastname"> <br><br>
+                            <input type="email" required placeholder="Email:" class="form-control inputbox" id="
+                            mail" name="email"> <br><br>
+                            <input type="password" required placeholder="password:" class="form-control inputbox" id="passwd" name="password1"> <br><br>
+                            <input type="password" required placeholder="confirm password:" class="form-control inputbox" id="passwd1" name="password2"> <br><br>
+                            <input list="age" placeholder="Age (-- select --)" class="form-control inputbox" >
+                            <datalist id="age" >
                               <option value="Age (-- select --)">
                               <option value="below 18">
                               <option value="18 - 23">
@@ -55,11 +56,10 @@
                             </datalist> <br><br>
                             <input type="radio" name="gender" value="male" class="radio"> Male 
                             <input type="radio" name="gender" value="female" class="radio"> Female <br> <br>
-                            <input type="checkbox" required name="Terms" value="check" class="check"> By clicking this box, I agree to the Terms and Conditions<br>
+                            <input type="checkbox" required name="tandc" value="check" class="check" id="tandc"> By clicking this box, I agree to the Terms and Conditions<br>
                             <h6>See Terms and Condiions here: <a href="#" class="link">Terms and Condition</a></h6>
-                            <input type="submit" value="Signup" class="btn" >
+                            <input onclick="validateFormSignup()" type="submit" value="Signup" class="btn" >
                             <p id="side"> Already have an account?  <a href="login.html" class="link">Login</a></p>
-                            
                     </form>
                 </div>
             </div>

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <header class="head">
@@ -25,13 +27,13 @@
         <section>
             <div class="container">
                 <div class="div">
-                    <form class="form">
+                    <form class="form" name="loginForm">
                             <h1>LOGIN HERE</h1>
-                            <input type="email" required placeholder="Email:" class="form-control inputbox"> <br><br>
-                            <input type="password" required placeholder="password:" class="form-control inputbox"> <br><br>
-                            <input type="password" required placeholder="confirm password:" class="form-control inputbox"> <br><br>
+                            <input type="email" required placeholder="Email:" class="form-control inputbox" id="mail" name="email"> <br><br>
+                            <input type="password" required placeholder="password:" class="form-control inputbox" id="passwd" name="password1"> <br><br>
+                            <input type="password" required placeholder="confirm password:" class="form-control inputbox" id="passwd1" name="password2"> <br><br>
                             
-                            <input type="submit" value="LOGIN" class="btn"  id="login-btn">
+                            <input type="submit" onclick="validateFormLogin()" value="LOGIN" class="btn"  id="login-btn">
                             <p id="login-side">Don't have an account?  <a href="./" class="link"> Signup</a></p><br>
 
                             <a href="#" id="a" class="link">Forgot password?</a>
